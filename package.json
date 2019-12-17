@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node crypto.js 2000000 aes cbc aes-256-cbc"
+    "start": "node crypto.js 2000000 aes-128-gcm"
   },
   "keywords": [],
   "author": "",
