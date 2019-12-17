@@ -8,7 +8,7 @@ const key192 = "192"
 const key256 = "256"
 
 const repetitionCount = process.argv[2]
-cipherName = process.argv[3]
+const cipherName = process.argv[3]
 
 var tag
 
