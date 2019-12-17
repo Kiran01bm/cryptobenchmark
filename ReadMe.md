@@ -3,9 +3,9 @@
 Note: Tests are on my MAC.
 
 ### Summary of Observations:
-128 to 192 - approx 10% increase in CPU usage and response time..
-192 to 256 - approx 10% increase in CPU usage and response time is like 5% increase...
-128 to 256 - approx 20% increase in CPU usage, 15% increase in responsetime..
+1. 128 to 192 - approx 10% increase in CPU usage and response time..
+2. 192 to 256 - approx 10% increase in CPU usage and response time is like 5% increase...
+3. 128 to 256 - approx 20% increase in CPU usage, 15% increase in responsetime..
 
 ### Respone Times:
 ```
