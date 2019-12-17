@@ -22,9 +22,9 @@ aes-256-gcm  Execution time: %dms 46647
 Some one did a test with some ASIC hardware - approximately 5*10^18≈2^62.117 encryptions per second. That means, for the full key they needed ≈2^128/2^62.117=2^65.883 seconds. 
 
 This is approximately:
-68*1018 seconds
-18.9*1015 hours
-2.158*1012 years. Written as integer: 2,158,000,000,000
+1. 68*10^18 seconds
+2. 18.9*10^15 hours
+3. 2.158*10^12 years. Written as integer: 2,158,000,000,000
 
 And they compare with the age of the universe - 13.799⋅109=13,799,000,000.
 
