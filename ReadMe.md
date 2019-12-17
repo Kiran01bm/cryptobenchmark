@@ -3,19 +3,23 @@
 Note: Tests are on my MAC.
 
 ### Summary of Observations:
-1. 128 to 192 - approx 10% increase in CPU usage and response time..
-2. 192 to 256 - approx 10% increase in CPU usage and response time is like 5% increase...
-3. 128 to 256 - approx 20% increase in CPU usage, 15% increase in responsetime..
-
-### Respone Times:
 ```
-aes-128-gcm  Execution time: %dms 41895
-aes-192-gcm  Execution time: %dms 44704
-aes-256-gcm  Execution time: %dms 46647
+Java
+Run #1 aes-128-gcm time taken in milli seconds --> 38270
+Run #3 aes-192-gcm time taken in milli seconds --> 37021
+Run #5 aes-256-gcm time taken in milli seconds --> 36718
+
+NodeJS
+Run #2 aes-128-gcm  Execution time: %dms 44909
+Run #4 aes-192-gcm  Execution time: %dms 43786
+Run #6 aes-256-gcm  Execution time: %dms 44079
+
+Run numbers are the order in which I ran the test so that you can see the graph and co-relate.. Java is much more efficient in handling Crypto I guess.. Better Performance at lesser CPU but it does consume more memory...
+
 ```
 
 ### Resource Utilisation
-![Resource Usage](images/resourceUsage.png?raw=true "Resource Utilisation During Test")
+![Java NodeJS Compare](images/javaNodeJsCompare.png?raw=true "Java NodeJS Compare")
 
 ### How long does it take to brute force a 128 bit key ?
 [Ref here](https://crypto.stackexchange.com/a/48669/75235)
