@@ -26,6 +26,6 @@ This is approximately:
 2. 18.9*10^15 hours
 3. 2.158*10^12 years. Written as integer: 2,158,000,000,000
 
-And they compare with the age of the universe - 13.799⋅109=13,799,000,000.
+And they compare with the age of the universe - 13.799⋅10^9=13,799,000,000.
 
 So a rough estimation would be 156.4 times the age of the universe for testing all keys.
