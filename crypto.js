@@ -3,8 +3,10 @@ const key32 = crypto.randomBytes(32);
 const key16 = crypto.randomBytes(16);
 const key24 = crypto.randomBytes(24);
 const iv = crypto.randomBytes(16);
-const aes = "aes"
-const bulkEncryptionSubType = "cbc"
+const repetitionCount = process.argv[2]
+const bulkEncryptionType = process.argv[3]
+const bulkEncryptionSubType = process.argv[4]
+cipherName=process.argv[5]
 const key128 = "128"
 const key192 = "192"
 const key256 = "256"
@@ -45,8 +47,7 @@ function sleep(millis) {
   return new Promise(resolve => setTimeout(resolve, millis));
 }
 
-for (let cipherName of crypto.getCiphers()) {
-    if (cipherName.indexOf(aes) > -1 && cipherName.indexOf(bulkEncryptionSubType) > -1) {
+    if (cipherName.indexOf(bulkEncryptionType) > -1 && cipherName.indexOf(bulkEncryptionSubType) > -1) {
         console.info(cipherName)
         if (cipherName.indexOf(key256) > -1) {
             key = key32
@@ -56,13 +57,10 @@ for (let cipherName of crypto.getCiphers()) {
             key = key16
         }
         var start = new Date()
-        for (var i = 0; i < process.argv[2]; i++) {
+        for (var i = 0; i < repetitionCount; i++) {
             var hw = encrypt(makeid(60), cipherName, key)
             decrypt(hw, cipherName, key)
         }
         var end = new Date() - start
         console.info(cipherName, ' Execution time: %dms', end)
-        sleep(180000).then(() => {
-        });
     }
-}
