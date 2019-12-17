@@ -17,9 +17,9 @@ aes-256-gcm  Execution time: %dms 46647
 ### Resource Utilisation
 ![Resource Usage](images/resourceUsage.png?raw=true "Resource Utilisation During Test")
 
-### Miscellaneous
+### How long does it take to brute force a 128 bit key ?
 [Ref here](https://crypto.stackexchange.com/a/48669/75235)
-Some one did a test with some ASIC hardware - approximately 5*10^18≈2^62.117 encryptions per second. That means, for the full key they needed ≈2^128/2^62.117=2^65.883 seconds. 
+Some one did a test with ASIC hardware (special purpose hardware, which can't be programmed to do anything else - but it's the best for speed) - which did approximately 5*10^18≈2^62.117 encryptions per second. That means, for the full key they needed ≈2^128/2^62.117=2^65.883 seconds. 
 
 This is approximately:
 1. 68*10^18 seconds
