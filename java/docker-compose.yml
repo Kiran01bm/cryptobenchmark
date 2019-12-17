@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  javacrypto:
+    build: .
+    image: springboot:javacrypto
+    container_name: sboot_javacrypto
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
